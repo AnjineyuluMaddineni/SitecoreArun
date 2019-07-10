@@ -3,3 +3,9 @@
 http://SitecoreArun/sitecore/login
 
 C:\Users\lenovo\Documents\visual studio 2015\Projects\SitecoreArun\SitecoreArun
+
+https://github.com/AnjineyuluMaddineni/SitecoreArun/tree/master/SitecoreArun
+
+Step01: Install sitecore instance site Name SitecoreArun
+Step02: Connected Visuval studio to Sitecore
+Step03: 

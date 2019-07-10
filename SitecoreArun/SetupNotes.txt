@@ -8,4 +8,10 @@ https://github.com/AnjineyuluMaddineni/SitecoreArun/tree/master/SitecoreArun
 
 Step01: Install sitecore instance site Name SitecoreArun
 Step02: Connected Visuval studio to Sitecore
-Step03: 
+Step03: Added StaticHtmlLayoutPage
+Step03: Created Template name Article(Itempath /sitecore/templates/Arun/Article )
+        Fields:
+        Title--SingleLineText
+		Description--Multi-Line-Text
+Step04: Created Standrd Values item for article Template and then added Token $name for Title.
+

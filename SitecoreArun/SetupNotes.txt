@@ -1,0 +1,5 @@
+﻿C:\Inetpub\wwwroot\SitecoreArun
+
+http://SitecoreArun/sitecore/login
+
+C:\Users\lenovo\Documents\visual studio 2015\Projects\SitecoreArun\SitecoreArun

@@ -149,6 +149,10 @@
     <Content Include="Web.config" />
     <Content Include="App_Config\ConnectionStrings.config" />
     <None Include="Properties\PublishProfiles\SitecoreArun.pubxml" />
+    <Content Include="Views\Shared\MainLayout.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Features\Articles.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

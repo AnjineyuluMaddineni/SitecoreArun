@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Data.Fields
+
+
+@{
+    Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+    Sitecore.Data.Items.Item articleFolder = master.GetItem("/sitecore/content/Home/Articles");
+    Sitecore.Collections.ChildList articleList = articleFolder.Children;
+    foreach (Sitecore.Data.Items.Item item in articleList)
+    {
+
+        <p>Titile :</p>@item.Fields["Title"].ToString();
+        <p>Description :</p>@item.Fields["Description"].ToString();
+    }
+
+}

@@ -45,3 +45,53 @@ C:\inetpub\wwwroot\SitecoreArun\Website\Views\Shared\MainLayout.cshtml
     @Html.Sitecore().Placeholder("footer")
 </body>
 </html>
+
+Step06: Next Created Header In Views Folder 
+        <header>
+              <h2>I'm from Header</h2>
+         </header>
+Step07: And then  articles Created Into views
+         
+         @using Sitecore.Mvc
+         @using Sitecore.Data.Fields
+
+
+         @{
+             Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+             Sitecore.Data.Items.Item articleFolder = master.GetItem("/sitecore/content/Home/Articles");
+             Sitecore.Collections.ChildList articleList = articleFolder.Children;
+             foreach (Sitecore.Data.Items.Item item in articleList)
+             {
+
+               <p>Titile :</p>@item.Fields["Title"].ToString();
+               <p>Description :</p>@item.Fields["Description"].ToString();
+              }
+
+            }
+Step08: created Footer In Views folder 
+           <footer>
+            <h1>I'm from Footer</h1>
+           </footer>
+Step09: After then created Placeholders 
+       Now Paste the placehoders in Body 
+	   
+		   @using Sitecore.Mvc
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <title>Anji updating placeholders</title>
+            <meta charset="utf-8" />
+            </head>
+            <body>
+            @Html.Sitecore().Placeholder("header")
+            @Html.Sitecore().Placeholder("feature")
+            @Html.Sitecore().Placeholder("footer")
+            </body>
+            </html>
+Step10: Go to the Sitecore 
+Step11: Created view Rendrings Like Header and Features And Footer 
+
+		   Header Path:~/Views/Shared/Header.cshtml
+		   Articles Path:~/Views/Features/Articles.cshtml
+		   Footer Path:~/Views/Shared/Footer.cshtml
+
